@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Facebook</title>
+	<style type="text/css">
+		body
+		{
+			margin: 0;
+		}
+		#main_contain
+		{
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			background-color: rgb(59,89,152);
+		}
+		#main_contain 
+		a
+		{
+			color: white;
+			margin-left: 30px;
+			text-decoration: none;
+			font-size: 20px;
+			
+		}
+		#main_contain_form input,#main_contain_form 
+		button 
+		{
+			margin-right: 10px;
+		}
+		#main_contain_form 
+		input
+		{
+			padding: 6px;
+			border-radius: 5px;
+			outline: none;
+			border: 2px solid white;
+		}
+		#main_contain_form input:focus,#main_section #section_regestration 
+		input:focus
+		{
+			border: 2px solid rgb(70,171,220);
+		}
+		#main_contain_form
+		button
+		{
+			padding: 7px 30px;
+			background-color: blue;
+			color: white;
+			outline: none;
+			border: none;
+			border-radius: 5px;
+		}
+		#main_section
+		{
+			background-color: rgb(217,223,235);
+			background-size: cover;
+			height: 85vh;
+			display: flex;
+			align-items: flex-start;
+			justify-content: space-evenly;
+		}
+		
+		#main_section #section_img 
+		img
+		{
+			width: 40vw;
+			height: 500px;
+			padding-top: -350px;
+		}
+		#section_regestration
+		{
+			margin-top: 20px;
+			color: rgb(59,89,152);
+
+		}
+		#main_section #section_regestration 
+		h1
+		{
+			font-size: 30px;
+			margin: 0;
+			
+			font-weight: bold;
+		}
+		#main_section #section_regestration .section_p1{
+			font-size: 25px;
+			margin: 0;
+			margin-bottom: 5px;
+		}
+		#main_section #section_regestration 
+		input
+		{	
+	        margin: 7px;
+			margin-left: 30px;
+			padding: 7px 25px;
+			outline: none;
+			border: 2px solid white;
+			border-radius: 5px;
+			text-align: justify;
+		}
+		 #main_section #section_regestration 
+		button
+		{
+		 	padding: 8px 30px;
+		 	border: none;
+		 	outline: none;
+		 	background-color:#42b72a;
+		 	color: white;
+		 	font-weight: bold;
+		 	border-radius: 10px;
+		}
+		#main_section #section_regestration .section_p2
+		{
+			margin: 0;
+			margin-bottom: 20px;
+		}
+		@media (max-width: 850px)
+		{
+		#main_contain
+		{
+				flex-direction: column;
+		}
+			#main_contain 
+			a
+		{
+			{
+				align-items: flex-start;
+				justify-content: center;
+				font-size: 15px;
+			} 
+			#main_contain #main_contain_form
+			{
+				padding-bottom: 20px;
+			}
+			#main_section
+			{
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+
+			}
+			#main_section #section_img
+			{
+				display: none;
+			}
+		}
+		@media (max-width: 550px)
+		{
+			#main_contain_form 
+			input{
+				padding: 6px;
+				width: 33%;
+			}
+		}
+	</style>
+</head>
+<body>
+	<header id="main_contain">
+		<a href="#"><h1>facebook</h1></a>
+	<div id="main_contain_form">
+		<input type="text" name="" placeholder="Email">
+		<input type="password" name="" placeholder="password">
+		<button>Login</button>
+	</div>
+	</header>
+	<section id="main_section">
+		<article id="section_img">
+			<img src="https://tse3.mm.bing.net/th?id=OIP.rbJTYM02t3O268Nekt8RbAHaFj&pid=Api&P=0&w=272&h=205">
+		</article>
+		<article id="section_regestration">
+			<form>
+				<h1>Sign in</h1>	
+			<div>
+				<label>Full Name:</label>
+			<input type="text" name="">
+			</div>
+			<div>
+				<label>Your Email:</label>
+			<input type="text" name="" >
+			</div>
+			<div>
+				<label>New Password:</label>
+			<input type="password" name="">
+			</div>
+			<div>
+				<label>I am:</label>
+				<input type="radio" name="gender" >Female
+				<input type="radio" name="gender" >Male
+			</div>
+			<div>
+				<label>Birthday:</label>
+				<input type="date" name="">
+			</div>
+			<button>Sign Up</button>
+			</form>
+			
+		</article>
+	</section>
+	
+</body>
+</html>
